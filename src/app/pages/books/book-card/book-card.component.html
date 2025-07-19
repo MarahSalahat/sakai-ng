@@ -1,0 +1,19 @@
+<p-card 
+  class="book-card" 
+  [header]="book.title" 
+  [subheader]="book.author">
+  
+  <p class="book-description">
+    {{ book.description }}
+  </p>
+
+  <div class="edit-btn-container">
+    <button 
+      pButton 
+      label="Edit" 
+      icon="pi pi-pencil" 
+      (click)="edit.emit(book)" 
+      class="edit-button p-button-text">
+    </button>
+  </div>
+</p-card>

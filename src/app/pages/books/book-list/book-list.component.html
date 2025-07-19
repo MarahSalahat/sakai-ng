@@ -1,0 +1,27 @@
+<div class="book-list-header flex justify-content-between align-items-center mb-4">
+  <h2 class="text-2xl font-semibold text-primary">Books</h2>
+
+   <button
+    pButton
+    icon="pi pi-plus"
+    label="Add Book"
+    class="add-book-button"
+    (click)="openNewBookForm()">
+  </button>
+</div>
+
+<div class="book-grid">
+  <app-book-card 
+    *ngFor="let book of books" 
+    [book]="book" 
+    (edit)="editBook($event)">
+  </app-book-card>
+</div>
+
+
+<app-book-form
+  [visible]="dialogVisible"
+  [book]="selectedBook"
+  (save)="saveBook($event)"
+  (close)="dialogVisible = false">
+</app-book-form>

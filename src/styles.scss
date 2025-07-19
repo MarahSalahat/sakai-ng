@@ -3,3 +3,10 @@
 @use './assets/layout/layout.scss';
 @use 'primeicons/primeicons.css';
 @use './assets/demo/demo.scss';
+
+:root {
+  --primary-color: #7e57c2;
+  --secondary-color: #9575cd;
+  --text-color: #333;
+  --border-radius: 0.75rem;
+}

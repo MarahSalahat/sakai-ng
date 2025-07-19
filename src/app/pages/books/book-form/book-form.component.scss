@@ -1,0 +1,50 @@
+:host {
+  display: block;
+}
+
+::ng-deep .book-dialog {
+  border-radius: 1rem;
+
+  .p-dialog-header {
+    background-color: #7e57c2;
+    color: white;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .p-dialog-content {
+    padding: 2rem;
+    background-color: #fdfbff;
+  }
+
+  .p-dialog-footer {
+    padding: 1.5rem;
+  }
+}
+
+.book-form {
+  .field {
+    margin-bottom: 1.5rem;
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #5e35b1;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+    }
+  }
+
+  button {
+    border-radius: 0.5rem;
+    font-weight: 600;
+  }
+}

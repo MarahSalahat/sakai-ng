@@ -24,6 +24,8 @@ export class AppMenu {
                 label: 'Home',
                 items: [{ label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] }]
             },
+  
+          
             {
                 label: 'UI Components',
                 items: [
@@ -49,6 +51,11 @@ export class AppMenu {
                 icon: 'pi pi-fw pi-briefcase',
                 routerLink: ['/pages'],
                 items: [
+                              {
+  label: 'Books',
+  icon: 'pi pi-book',
+  routerLink: ['/books']
+},
                     {
                         label: 'Landing',
                         icon: 'pi pi-fw pi-globe',
@@ -151,7 +158,9 @@ export class AppMenu {
                         target: '_blank'
                     }
                 ]
-            }
+            },
+           
+
         ];
     }
 }
